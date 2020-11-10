@@ -1,22 +1,173 @@
 body {
   display: flex;
   justify-content: center;
-  background: repeating-linear-gradient(
-    45deg,
-    #ace2f3,
-    #ace2f3 10px,
-    #a4d9e9 10px,
-    #a4d9e9 20px,
-    );
+  background-image: url(https://mw1.google.com/mw-planetary/sky/skytiles_v1/76_27_7.jpg);
+  background-position: center;
+  background-repeat: repeat;
 }
+
+
 #container{
   position: relative;
   top: 100px;
   width: 500px;
 }
 
-#content-box{
-  background: white;
-  padding: 15px;
-  margin-bottom: 15px;
+#content-box2{
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 10px;
+  height: 10px;
+  background: #e7e9b9;
+  padding: 200px;
+  border-radius: 400px;
+  margin-bottom: 50px;
+  border-radius: 400px;
+  box-shadow: -2px -2px 20px 20px #e7e9b9;
 }
+
+#content-box{
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 10px;
+  height: 10px;
+  background: #212121;
+  background-image: url(https://images.theconversation.com/files/203104/original/file-20180123-33560-1wukgov.jpg?ixlib=rb-1.1.0&rect=137%2C0%2C1269%2C864&q=45&auto=format&w=926&fit=clip);
+  background-position: center;
+  background-repeat: repeat;
+  padding: 200px;
+  margin-bottom: 50px;
+  border-radius: 400px;
+  animation-name: shift;
+  animation-duration: 5s;
+  animation-play-state: play;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+ul{
+  position: relative;
+  margin: 25px;
+  list-style-type: none;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  margin: 1px;
+}
+
+a {
+  font-family: BenchNine3;
+  text-decoration: none;
+  background: #ace2f3;
+  padding: 13px;
+  color: #ce60a9;
+}
+
+a:hover{
+  background: #a1d4e4;
+}
+
+@keyframes shift{
+    from {background-color:#161616;}
+    to {background-color: #3d3d3d;}
+    0%{left: -100px;}
+    2%{left: -100px;}
+    4%{left:-90px;}
+    6%{left:-80px;}
+    8%{left:-70px;}
+    10%{left:-60px;}
+    12%{left:-50px;}
+    14%{left:-40px;}
+    16%{left: -30px;}
+    18%{left:-20;}
+    20%{left:-10px;}
+    22%{left:0px;}
+    24%{left:10px;}
+    26%{left:20px;}
+    28%{left:20px;}
+    30%{left:30px;}
+    32%{left:40px;}
+    34%{left:50px;}
+    37%{left:60px;}
+    40%{left:70px;}
+    43%{left:80px;}
+    46%{left:90px;}
+    59%{left:100px;}
+    62%{left:90px;}
+    65%{left:80px;}
+    69%{left:70px;}
+    72%{left:60px;}
+    75%{left:50px;}
+    78%{left:40px;}
+    76%{left:30px;}
+    77%{left:20px;}
+    78%{left:10px;}
+    80%{left:0px;}
+    83%{left:-10px;}
+    85%{left:-20px;}
+    86%{left:-30px;}
+    88%{left:-40px;}
+    90%{left: -50px;}
+    92%{left: -60px;}
+    94%{left: -70px;}
+    96%{left:-80px;}
+    98%{left: -90px;}
+    100%{left:-100px;}
+  }
+}
+/*
+radial-gradient(circle, #0c0f1c, #111427, #14192f, #181e39);
+
+0%{left: 10px;}
+5%{left:20px;}
+10%{left:30px;}
+15%{left:40px;}
+20%{left:50px;}
+25%{left:60px;}
+30%{left:70px;}
+35%{left: 80px;}
+40%{left:90px;}
+45%{left:100px;}
+50%{left:110px;}
+55%{right:100px;}
+60%{right:90px;}
+65%{right:80px;}
+70%{right: 70px;}
+75%{right: 60px;}
+80%{right:50px;}
+85%{right:40px;}
+90%{right:30px;}
+95%{right: 20px;}
+100%{right: 10px;}
+
+@keyframes second{
+    from {background-color:#e7e9b9;}
+    to {background-color: #e7e9b9;}
+    0%{left: -100px;}
+    5%{left:-90px;}
+    10%{left:-80px;}
+    15%{left:-70px;}
+    20%{left:-60px;}
+    25%{left:-50px;}
+    30%{left:-400px;}
+    35%{left: -30px;}
+    40%{left:-20;}
+    45%{left:-10px;}
+    50%{left:0px;}
+    55%{left:10px;}
+    60%{left:20px;}
+    65%{left:20px;}
+    70%{left:30px;}
+    75%{left:40px;}
+    80%{left:50px;}
+    85%{left:60px;}
+    90%{left:70px;}
+    95%{left:80px;}
+    100%{left:90px;}
+  }
